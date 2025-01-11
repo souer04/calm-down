@@ -1,0 +1,38 @@
+.header {
+    width: 100vw;
+    background-color: rgb(27, 27, 27);
+    height: 18vh;
+    border-bottom: 5px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header #top a {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+}
+
+#top {
+    display: flex;
+}
+
+#spacer {
+    width: 4rem;
+    height: 100%;
+}
+
+.header #links {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-end;
+}
+
+
+#spacer-two {
+    flex-basis: 2rem;
+    height: 100%;
+}
+

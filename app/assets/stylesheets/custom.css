@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+
+.head {
+    flex-basis: 30vh;
+    padding-top: 20rem;
+    padding-left: 30rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.body {
+    flex-basis: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    border: 1px solid white;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: .6rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.links button {
+    font-family: sans-serif;
+    padding: 5px;
+    background-color: rgb(43, 62, 114);
+    border: none;
+    border-radius: 3px;
+}
+
+.links button a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: sans-serif;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+    font-size: 19px;
+}
+
+.content img {
+    float: left;
+    width: 10%;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.content > h2 {
+    margin-bottom: 1.5rem;
+}
+
+.question {
+    margin-bottom: 2.4rem;
+}
+
+.content h3 {
+    margin-bottom: .5rem;
+}
