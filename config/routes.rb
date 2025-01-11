@@ -14,7 +14,6 @@ Rails.application.routes.draw do
   root "pages#home"
 
   get "/about", to: "pages#about"
-  get "/members", to: "pages#members"
   get "/donate", to: "pages#donate"
   get "/faq", to: "pages#faq"
 end
