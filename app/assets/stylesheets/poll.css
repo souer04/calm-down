@@ -40,6 +40,11 @@
     width: 100%;
 }
 
+#ctnr {
+    display: flex;
+    align-items: center;
+}
+
 .choice {
     color: white;
     text-decoration: none;
@@ -53,7 +58,7 @@ a {
 
 #check {
     width: 1.6rem;
-    margin: .3rem .3rem 0 .3rem;
+    margin: 0 .3rem 0 .3rem;
     height: auto;
 }
 
