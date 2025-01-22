@@ -12,19 +12,31 @@ class PagesController < ApplicationController
   end
 
   def poll
-    user_ip = request.remote_addr
-    @safe_ip = user_ip.gsub('.', '-')
-    @voted = Poll.exists?(ip: user_ip)
+    @voted = self.voted?(cookies)
     @count = Poll.all.length
   end
 
   def vote
-    user_ip = params.require(:ip).gsub('-', '.')
-    p "*** IP ***: " + user_ip
-    if !Poll.exists?(ip: user_ip)
-      Poll.create(ip: user_ip)
+    if !cookies[:voted].present?
+      Poll.create(ip: request.remote_ip)
+      cookies.permanent[:voted] = "true"
     end
     @count = Poll.all.length
     redirect_to action: "poll"
+  end
+
+  private
+
+  def get_user_ip
+    forwarded_for = request.env['HTTP_X_FORWARDED_FOR']
+    if forwarded_for
+      forwarded_for.split(',').first.strip
+    else
+      request.remote_ip
+    end
+  end
+
+  def voted?(cookies)
+    cookies[:voted].present?
   end
 end
