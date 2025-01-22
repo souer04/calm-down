@@ -9,6 +9,10 @@
     margin-top: 1rem;
 }
 
+.unvoted .poll-button {
+    cursor: pointer;
+}
+
 .poll-button,
 .poll-button-voted {
     width: 95%;
@@ -18,7 +22,6 @@
     background-color: rgb(44, 44, 44);
     margin-top: 10px;
     border-radius: 5px;
-    cursor: pointer;
     height: fit-content;
     padding: .3rem;
 }
@@ -29,8 +32,7 @@
     padding: 0;
 }
 
-.poll-button:hover,
-.poll-button-voted:hover {
+.unvoted .poll-button:hover {
     background-color: rgb(19, 19, 19);
 }
 
