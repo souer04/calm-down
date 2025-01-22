@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
 
   def poll
-    @user_ip = request.remote_ip
+    @user_ip = request.remote_ip.gsub('.', '-')
     @voted = false
     @count = Poll.all.length
 
@@ -22,7 +22,7 @@ class PagesController < ApplicationController
   end
 
   def vote
-    user_ip = params.require(:ip)
+    user_ip = request.remote_ip.gsub('-', '.')
     if !Poll.exists?(ip: user_ip)
       Poll.create(ip: user_ip)
     end
