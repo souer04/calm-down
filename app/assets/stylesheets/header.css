@@ -1,8 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    height: .5rem;
+    background-color: white;
+    width: 100vw;
+}
+
 .header {
     width: 100vw;
     background-color: rgb(27, 27, 27);
-    height: 18vh;
-    border-bottom: 5px solid white;
+    /*height: 18vh;*/
+    height: fit-content;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: space-between;

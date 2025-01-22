@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about"
   get "/donate", to: "pages#donate"
   get "/faq", to: "pages#faq"
+  get "/poll", to: "pages#poll"
+  get "/vote/:ip", to: "pages#vote", as: :vote
 end

@@ -1,0 +1,11 @@
+<%= render partial: "shared/head" %>
+
+<div class="content">
+  <div class="poll">
+    <% if @voted %>
+        <%= render partial: "shared/voted" %>
+    <% else %>
+        <%= render partial: "shared/poll" %>
+    <% end %>
+  </div>
+</div>

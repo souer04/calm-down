@@ -15,4 +15,5 @@
  *= require_self
  *= require custom
  *= require header
+ *= require poll
  */

@@ -20,7 +20,7 @@ body {
 
 .head {
     flex-basis: 30vh;
-    padding-top: 25%;
+    padding-top: 19%;
     padding-left: 35%;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -33,13 +33,16 @@ body {
 
 .links {
     border: 1px solid white;
-    height: 6.5rem;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     padding: .6rem;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    width: fit-content;
 }
 
 .links button {
@@ -48,6 +51,7 @@ body {
     background-color: rgb(43, 62, 114);
     border: none;
     border-radius: 3px;
+    margin: 3px;
 }
 
 .links button a {

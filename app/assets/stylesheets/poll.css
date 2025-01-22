@@ -1,0 +1,51 @@
+.poll {
+    background-color: rgb(53, 53, 53);
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    border-radius: 10px;
+    padding: .8rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.poll-button,
+.poll-button-voted {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+    padding: .3rem;
+}
+
+.poll-button p,
+.poll-button-voted p {
+    margin: .5rem;
+    padding: 0;
+}
+
+.poll-button:hover,
+.poll-button-voted:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+#correct-choice {
+    width: 100%;
+}
+
+
+
+#check {
+    width: 1.6rem;
+    margin: .3rem .3rem 0 .3rem;
+    height: auto;
+}
+
+
+
