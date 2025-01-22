@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def poll
     @voted = self.voted?(cookies)
     @count = Poll.all.length
+    if count == 0 && @voted
+      @count = 1
+    end
   end
 
   def vote
