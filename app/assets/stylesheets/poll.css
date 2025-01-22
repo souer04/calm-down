@@ -6,7 +6,6 @@
     height: fit-content;
     border-radius: 10px;
     padding: .8rem;
-    color: white;
     margin-top: 1rem;
 }
 
@@ -37,6 +36,15 @@
 
 #correct-choice {
     width: 100%;
+}
+
+.choice {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
